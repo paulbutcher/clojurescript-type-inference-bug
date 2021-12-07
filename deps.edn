@@ -1,0 +1,9 @@
+{:deps {org.clojure/clojurescript {:mvn/version "1.10.893"}
+
+        binaryage/oops {:mvn/version "0.7.1"}
+        com.bhauman/figwheel-main {:mvn/version "0.2.15"}}
+
+ :paths ["src/cljs"]
+
+ :aliases {:build {:extra-paths ["src/prod"]
+                   :main-opts ["-m" "figwheel.main" "-O" "advanced" "-bo" "prod"]}}}
